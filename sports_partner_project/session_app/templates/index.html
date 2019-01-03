@@ -92,7 +92,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Rejoins Ma Team, Vie ton Experience...</div>
 										<div class="home_slider_subtitle font-weight-bold text-capitalize">Construis ta Team, rejoins une equipe . Un five c'est deux equipes de 5 ou preferes-tu le gazon alors la il te faut du renfort.</div>
-										<div class="button button_light home_button"><a href="{% url 'session_app:session' %}">Football</a></div>
+										<div class="button button_light home_button"><a href="{% url 'session_app:join_session' %}">Football</a></div>
 									</div>
 								</div>
 							</div>
@@ -110,7 +110,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Montre Moi la Force du Dunk...</div>
 										<div class="home_slider_subtitle font-weight-bold text-capitalize">Construis ta Team, rejoins une equipe, le basbetball se joue a 10 trouve des joueurs pour disputer le match.</div>
-										<div class="button button_light home_button"><a href="{% url 'session_app:session' %}">Basketball</a></div>
+										<div class="button button_light home_button"><a href="{% url 'session_app:join_session' %}">Basketball</a></div>
 									</div>
 								</div>
 							</div>
@@ -128,7 +128,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Jeu, Set et match...</div>
 										<div class="home_slider_subtitle font-weight-bold text-capitalize">Un tennis se joue a deux minimum, defis moi.</div>
-										<div class="button button_light home_button"><a href="{% url 'session_app:session' %}">Tennis</a></div>
+										<div class="button button_light home_button"><a href="{% url 'session_app:join_session' %}">Tennis</a></div>
 									</div>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title" >Plus vite, plus fort, depasse toi et rejoins ma Team de joggers...</div>
 										<div class="home_slider_subtitle font-weight-bold text-capitalize">Inscris toi et rencontre d'autres coureurs qui ont la meme passion que toi. Tu augmenteras ta qualite physique et ta motivation, mais egalement, tu partageras ta passion avec d'autres sportifs</div>
-										<div class="button button_light home_button"><a href="{% url 'session_app:session' %}">Jogging</a></div>
+										<div class="button button_light home_button"><a href="{% url 'session_app:join_session' %}">Jogging</a></div>
 									</div>
 								</div>
 							</div>
@@ -189,46 +189,46 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="{% static 'images/product_1.jpg' %}" alt=""></div>
+							<div class="product_image"><img src="{% static 'images/footman.jpg' %}" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html"><i class="fas fa-futbol mr-1"></i>Football Session</a></div>
 								
 								<br>
-								<button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button><span> </span>
-								<a href="{% url 'session_app:session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
+								<a href="{% url 'session_app:create_session' %}"><button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button></a><span> </span>
+								<a href="{% url 'session_app:join_session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
 							</div>
 						</div>
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="{% static 'images/product_2.jpg' %}" alt=""></div>
+							<div class="product_image"><img src="{% static 'images/basketman.jpg' %}" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html"><i class="fas fa-basketball-ball mr-1"></i>Basketball Session</a></div>
 								<br>
-								<button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button><span> </span>
-								<a href="{% url 'session_app:session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
+								<a href="{% url 'session_app:create_session' %}"><button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button></a><span> </span>
+								<a href="{% url 'session_app:join_session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
 							</div>
 						</div>
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="{% static 'images/product_3.jpg' %}" alt=""></div>
+							<div class="product_image"><img src="{% static 'images/tennisman.jpg' %}" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html"><i class="fas fa-baseball-ball mr-1"></i>Tennis Session</a></div>
 								<br>
-								<button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button><span> </span>
-								<a href="{% url 'session_app:session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
+								<a href="{% url 'session_app:create_session' %}"><button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button></a><span> </span>
+								<a href="{% url 'session_app:join_session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
 							</div>
 						</div>
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="{% static 'images/product_4.jpg' %}" alt=""></div>
+							<div class="product_image"><img src="{% static 'images/runner.jpg' %}" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.html"><i class="fas fa-running mr-1"></i>Jogging Session</a></div>
 								<br>
-								<button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button><span> </span>
-								<a href="{% url 'session_app:session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
+								<a href="{% url 'session_app:create_session' %}"><button type="button" class="btn btn-outline-danger btn-sm mr-1">Creer</button></a><span> </span>
+								<a href="{% url 'session_app:join_session' %}"><button type="button" class="btn btn-outline-dark btn-sm">Rejoindre</button></a>
 							</div>
 						</div>
 

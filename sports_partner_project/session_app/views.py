@@ -6,16 +6,17 @@ from session_app.forms import SelectionForm
 def index(request):
     return render(request, 'index.html', context={'index': index})
 
-
 def contact(request):
 	return render(request, 'contact.html', context={'contact': contact})
-
 
 def categories(request):
 	return render(request, 'categories.html', context={'categories': categories})
 
-def session(request):
-	return render(request, 'session.html', context={'session': session})
+def join_session(request):
+	return render(request, 'join_session.html', context={'join_session': join_session})
+
+def create_session(request):
+	return render(request, 'create_session.html', context={'create_session': create_session})
 
 def selection_form(request):
 	if request.method =='POST':
@@ -23,7 +24,6 @@ def selection_form(request):
 		return redirect('success/')
 
 	return render(request, 'selection_form.html', context={ 'selection_form': SelectionForm() })
-
 
 def success(request):
 	return render(request, 'success.html')
