@@ -6,6 +6,7 @@ app_name = 'session_app'
 urlpatterns = [
 	path('', views.index, name='index'),
 	path('contact', views.contact, name='contact'),
+	path('session', views.session, name='session'),
 	path('categories', views.categories, name='categories'),
 	path('selection_form', views.selection_form, name='selection_form'),
 ]

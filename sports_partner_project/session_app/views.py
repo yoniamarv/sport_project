@@ -14,6 +14,8 @@ def contact(request):
 def categories(request):
 	return render(request, 'categories.html', context={'categories': categories})
 
+def session(request):
+	return render(request, 'session.html', context={'session': session})
 
 def selection_form(request):
 	if request.method =='POST':
